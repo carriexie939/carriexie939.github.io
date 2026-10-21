@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="googlebot" content="noindex, nofollow">
+<meta name="description" content="Carrie Xie, Product Manager in Sydney. Portfolio of product work, AI projects and growth results.">
+<style>:root{color-scheme:light;box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}body{margin:0}img{max-width:100%}</style>
+<title>Carrie Xie Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: single readable column; product work as a ledger of problem → build → outcome, growth wins as a metric table */
+:root{
+  --bg:#f6f7f8; --surface:#ffffff; --fg:#17202b; --muted:#5b6673; --line:#dde2e7;
+  --accent:#1d5c63; --accent-soft:#e3eff0; --good:#2f7a4b;
+  --display:"Instrument Serif", Georgia, "Times New Roman", serif;
+  --body:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#11161b; --surface:#181f26; --fg:#e8edf1; --muted:#9aa6b2; --line:#2a333c;
+  --accent:#6fb6bd; --accent-soft:#1d2d31; --good:#79c595; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#11161b; --surface:#181f26; --fg:#e8edf1; --muted:#9aa6b2; --line:#2a333c;
+  --accent:#6fb6bd; --accent-soft:#1d2d31; --good:#79c595; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.6;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:820px;margin:0 auto;padding-block:56px 72px;display:flex;flex-direction:column;gap:56px}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
+header{display:flex;flex-direction:column;gap:14px}
+.eyebrow{font-family:var(--mono);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(44px,8vw,68px);line-height:1;margin:0;letter-spacing:-.01em}
+.lede{font-size:18px;max-width:62ch;margin:0;color:var(--fg)}
+.lede em{font-family:var(--display);font-style:italic;font-size:1.15em}
+.links{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:15px}
+.contact{display:flex;flex-wrap:wrap;align-items:center;gap:10px;font-size:15px;color:var(--muted)}
+.email{font-family:var(--mono);color:var(--fg);user-select:all}
+.rights{margin:0;font-size:14.5px;color:var(--muted);background:var(--accent-soft);border-radius:8px;padding:8px 12px;align-self:flex-start;max-width:100%}
+.rights b{color:var(--accent);font-weight:600}
+.copy{font:500 13px var(--body);color:var(--accent);background:var(--accent-soft);border:0;border-radius:999px;padding:4px 12px;cursor:pointer}
+section{display:flex;flex-direction:column;gap:20px}
+h2{font-family:var(--display);font-weight:400;font-size:34px;margin:0;line-height:1.1}
+.sub{color:var(--muted);margin:-10px 0 0;max-width:62ch}
+.work{display:flex;flex-direction:column;gap:16px}
+article{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:22px 24px;display:flex;flex-direction:column;gap:12px}
+.head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;align-items:baseline}
+h3{font-size:19px;font-weight:600;margin:0;text-wrap:balance}
+.meta{font-family:var(--mono);font-size:12.5px;color:var(--muted)}
+dl{display:grid;grid-template-columns:120px 1fr;gap:6px 16px;margin:0}
+dt{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding-top:3px}
+dd{margin:0;min-width:0}
+.cta{display:flex;flex-wrap:wrap;gap:8px}
+.cta a{font-size:14px;font-weight:500;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:5px 14px;color:var(--accent)}
+.cta a:hover{background:var(--accent-soft)}
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th,td{text-align:left;padding:14px 18px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+th{font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums;color:var(--good);font-weight:500;white-space:nowrap}
+.how{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.how div{border-top:2px solid var(--accent);padding-top:10px}
+.how b{display:block;margin-bottom:2px}
+.how p{margin:0;color:var(--muted);font-size:15px}
+footer{color:var(--muted);font-size:14px;border-top:1px solid var(--line);padding-top:20px}
+@media (max-width:560px){dl{grid-template-columns:1fr;gap:2px}dt{padding-top:8px}article{padding:18px}}
+@media (prefers-reduced-motion:no-preference){.cta a,.copy{transition:background .15s}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="eyebrow">Product Manager · Sydney</span>
+    <h1>Carrie Xie</h1>
+    <p class="lede">I turn user behaviour into products people keep using. 8+ years owning consumer mobile products at Tencent, Bilibili and Meitu, and consumer and B2B AI products at HomeLM in Sydney. I <em>build</em> with AI tools rather than wait for them.</p>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/carriexie" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/carriexie939" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://homelm.ai/" target="_blank" rel="noopener">HomeLM</a>
+    </div>
+    <div class="contact">
+      <span class="email" id="email">carriexie939@gmail.com</span>
+      <button class="copy" id="copyBtn" type="button">Copy email</button>
+    </div>
+    <p class="rights"><b>Full work rights in Australia</b> · Temporary Graduate visa (TGV) · Available to start immediately</p>
+  </header>
+
+  <section aria-labelledby="built">
+    <h2 id="built">Things I've built</h2>
+    <p class="sub">Each one started with a real problem. Links go to the working product, code or a demo video.</p>
+    <div class="work">
+      <article>
+        <div class="head"><h3>HomeLM, AI property search</h3><span class="meta">Product Manager · Apr 2025 – Jul 2026</span></div>
+        <dl>
+          <dt>Problem</dt><dd>Home buyers looking at new developments and off-the-plan projects struggle to turn what they want into a property search.</dd>
+          <dt>My role</dt><dd>Owned the roadmap, with objectives set every two weeks, and four live features: AI adviser, map overlays, listing cards and investment summaries. Shaped search, personalised recommendations and nearby-amenity content, built a persona-based LLM evaluation (50+ queries), and proposed the monetisation plan, including pricing and packaging, which investors endorsed.</dd>
+          <dt>Key decision</dt><dd>Users told us the one-page homepage felt like a scam. Leadership wanted to keep it simple, so I proposed an A/B test and ran user tests. A second page lifted click-through rate and shipped. On search, I argued for shipping a fast, roughly 80%-accurate first version and improving precision in phases.</dd>
+          <dt>Also</dt><dd>Led an AI upgrade of the agents' CRM. When adoption was low, I asked agents about their real workflow and redesigned it around follow-up scenarios, status tags and reminders. The sales team rolled it out to agents, who now write less and follow up faster.</dd>
+        </dl>
+        <div class="cta"><a href="https://homelm.ai/" target="_blank" rel="noopener">Visit website</a><a href="https://youtu.be/5Im73NkGNBQ" target="_blank" rel="noopener">Watch demo</a></div>
+      </article>
+      <article>
+        <div class="head"><h3>AI Job Search System</h3><span class="meta">Notion · Codex · MCP · built in 3 days</span></div>
+        <dl>
+          <dt>Problem</dt><dd>Finding the right roles and tailoring for each one by hand was slow, and generic resumes got ignored.</dd>
+          <dt>Built</dt><dd>A human-in-the-loop workflow: AI localises my resume for Australia, finds recent high-match roles on Seek, Indeed and LinkedIn, scores each one and logs every application.</dd>
+          <dt>Learned</dt><dd>Fit scores alone predicted outcomes weakly, so I added gap analysis and manual review. It now screens about 10 roles a day, with 80+ tracked.</dd>
+        </dl>
+        <div class="cta"><a href="https://github.com/carriexie939/job-hunting-workflow" target="_blank" rel="noopener">View on GitHub</a></div>
+      </article>
+      <article>
+        <div class="head"><h3>Cat Budget Tracker</h3><span class="meta">Built end to end in Cursor</span></div>
+        <dl>
+          <dt>Goal</dt><dd>Help people keep logging expenses instead of giving up after a few weeks.</dd>
+          <dt>Built</dt><dd>An app from requirements and UI through to code, with an animated cat that reacts to monthly balance versus forecast spending, category bill views and receipt-photo capture.</dd>
+          <dt>Outcome</dt><dd>I use it daily as the primary user.</dd>
+        </dl>
+        <div class="cta"><a href="https://youtu.be/vGPNn-PHwXk" target="_blank" rel="noopener">Watch demo</a></div>
+      </article>
+      <article>
+        <div class="head"><h3>BridgeEd</h3><span class="meta">Oceania EduX Hackathon 2026 · team of 3</span></div>
+        <dl>
+          <dt>Goal</dt><dd>Connect students, teachers and parents around a child's learning progress.</dd>
+          <dt>My role</dt><dd>Led product prototyping, feature design and the front-end UI: AI concept explanations, quiz generation, parent-teacher messaging and progress tracking.</dd>
+        </dl>
+        <div class="cta"><a href="https://youtu.be/RliMULNUMrQ" target="_blank" rel="noopener">Watch demo</a></div>
+      </article>
+    </div>
+  </section>
+
+  <section aria-labelledby="scale">
+    <h2 id="scale">Consumer products at scale</h2>
+    <p class="sub">Mobile consumer apps used by millions, where I owned roadmaps, worked closely with creators and users, and launched growth campaigns.</p>
+    <div class="work">
+      <article>
+        <div class="head"><h3>Bilibili, creator tools</h3><span class="meta">Senior Product Operations · Sep 2022 – Oct 2023</span></div>
+        <dl>
+          <dt>Product</dt><dd>Mobile video creation and publishing tools for creators on Bilibili, often called China's YouTube: a leading video platform with a large Gen Z community.</dd>
+          <dt>My role</dt><dd>Reworked creator tool workflows and the publishing experience, writing requirements from creator feedback and behaviour data. Built and ran creator groups, answered questions and turned complaints into fixes. Pulled the team's core metrics in SQL and Excel, led sprint planning, and mentored six new hires, including graduates.</dd>
+          <dt>Go-to-market</dt><dd>Co-created campaigns with gaming creators to publish game-themed videos made with our shooting tools, which sharply lifted uploads.</dd>
+          <dt>Results</dt><dd>Daily user-generated content up 46% and active creators up 33%.</dd>
+        </dl>
+      </article>
+      <article>
+        <div class="head"><h3>Tencent, content creation tool</h3><span class="meta">Senior Product Operations · Apr 2020 – Aug 2022</span></div>
+        <dl>
+          <dt>Product</dt><dd>A mobile video creation tool (think CapCut) with millions of users, inside Tencent, the company behind WeChat and one of the world's largest social media and gaming companies.</dd>
+          <dt>My role</dt><dd>Owned the roadmap and quarterly OKRs, including personalised recommendations. Ran competitor analysis, usability testing and user research to find creator pain points. Built a content quality scoring system and worked with the design team on onboarding and creator workflows.</dd>
+          <dt>Creators</dt><dd>Scouted top creators for the tool, wrote the rules for a tiered promotion system and helped them earn on Tencent Video.</dd>
+          <dt>Go-to-market</dt><dd>Partnered with Game for Peace, the Chinese version of PUBG Mobile, on a campaign that guided gaming creators to make videos with the tool, added in-video item hunts, and promoted the game's posters to male users in Tencent's short-video app to lift tool usage.</dd>
+          <dt>Results</dt><dd>User churn down 15% and video engagement up 30%.</dd>
+        </dl>
+      </article>
+      <article>
+        <div class="head"><h3>Meitu, BeautyCam</h3><span class="meta">Product Operations, User Research · Dec 2017 – Oct 2019</span></div>
+        <dl>
+          <dt>Product</dt><dd>BeautyCam, Meitu's beauty camera and photo editing app, similar to Facetune and one of China's most popular camera apps.</dd>
+          <dt>My role</dt><dd>Ran user interviews, surveys and community research to find user needs, behaviour patterns and product pain points. Talked regularly with premium (VIP) members and ran user research with the Meitu Japan team.</dd>
+          <dt>Impact</dt><dd>Turned research findings into product requirements and feature recommendations.</dd>
+          <dt>Results</dt><dd>NPS up 20 points in six months.</dd>
+        </dl>
+      </article>
+    </div>
+  </section>
+
+  <section aria-labelledby="growth">
+    <h2 id="growth">Results at a glance</h2>
+    <p class="sub">Consumer mobile products with millions of users, where I worked on first-time experience, adoption and monetisation.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Where</th><th>What I did</th><th>Result</th></tr></thead>
+        <tbody>
+          <tr><td>Bilibili<br><span class="meta">China's YouTube<br>2022–2023</span></td><td>Reworked creator workflows and the publishing experience from creator feedback and behaviour data; co-created game-themed campaigns with gaming creators</td><td class="num">+46% daily content<br>+33% active creators</td></tr>
+          <tr><td>Tencent<br><span class="meta">WeChat's parent company<br>2020–2022</span></td><td>Owned the roadmap and quarterly OKRs for a creation tool; improved onboarding with the design team; built a creator partner program with tiered promotion; launched a content quality scoring system</td><td class="num">−15% churn<br>+30% video engagement</td></tr>
+          <tr><td>Rednote<br><span class="meta">Like Instagram + Pinterest<br>2023–2025</span></td><td>Built a content and growth plan, then tested acquisition and conversion funnels for a paid service</td><td class="num">17.7K followers<br>AOV &gt; RMB 500</td></tr>
+          <tr><td>Meitu<br><span class="meta">Maker of BeautyCam<br>2017–2019</span></td><td>Turned user interviews and surveys into product requirements, including research with the Japan team</td><td class="num">+20 NPS</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section aria-labelledby="how">
+    <h2 id="how">How I work</h2>
+    <div class="how">
+      <div><b>Start from the user</b><p>Interviews, usability tests and A/B tests before opinions; data to check what actually changed.</p></div>
+      <div><b>Build, then measure</b><p>Prototype with Claude, Cursor or Figma, ship, and track adoption with dashboards and SQL.</p></div>
+      <div><b>Keep it moving</b><p>Clear specs with acceptance criteria, weekly planning, and trade-offs explained to engineers, leaders and clients.</p></div>
+    </div>
+  </section>
+
+  <footer>Master of Information Technology, University of Technology Sydney (High Distinction average). English and Mandarin.</footer>
+</div>
+
+<script>
+document.getElementById('copyBtn').addEventListener('click', function(){
+  var btn=this, text=document.getElementById('email').textContent;
+  function done(){btn.textContent='Copied';setTimeout(function(){btn.textContent='Copy email';},1600);}
+  function fallback(){var r=document.createRange();r.selectNodeContents(document.getElementById('email'));var s=window.getSelection();s.removeAllRanges();s.addRange(r);btn.textContent='Selected, press Ctrl/Cmd+C';}
+  try{navigator.clipboard.writeText(text).then(done,fallback);}catch(e){fallback();}
+});
+</script>
+</body>
+</html>
